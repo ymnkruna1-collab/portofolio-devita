@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devita Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fffafc;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    padding:25px 0;
+}
+
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#d88fa0;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#555;
+    margin-left:25px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d88fa0;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:3.5rem;
+    line-height:1.2;
+}
+
+.hero-text span{
+    color:#d88fa0;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#666;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:#d88fa0;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero-image{
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:400px;
+    border-radius:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+/* SECTION */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2rem;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* SKILLS */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    text-align:center;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+/* PORTFOLIO */
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.project img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+footer{
+    padding:30px;
+    text-align:center;
+    color:#777;
+}
+
+@media(max-width:768px){
+
+.hero-content{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:2.5rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav-content">
+<div class="logo">Runa.</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+<h1>Hello, I'm <span>Runa</span></h1>
+
+<p>
+Creative freelancer specializing in video editing,
+social media design, and e-commerce content creation.
+</p>
+
+<a href="#portfolio" class="btn">View My Work</a>
+</div>
+
+<div class="hero-image">
+<img src="profile.jpg" alt="">
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Skills</h2>
+<p>Tools and expertise</p>
+</div>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Video Editing</h3>
+<p>CapCut, Premiere Pro</p>
+</div>
+
+<div class="skill-card">
+<h3>Graphic Design</h3>
+<p>Canva, Photoshop</p>
+</div>
+
+<div class="skill-card">
+<h3>E-Commerce</h3>
+<p>Shopee, Shopify</p>
+</div>
+
+<div class="skill-card">
+<h3>Content Creation</h3>
+<p>Social Media & Branding</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Featured Projects</h2>
+<p>Selected works</p>
+</div>
+
+<div class="portfolio-grid">
+
+<div class="project">
+<img src="project1.jpg">
+<div class="project-content">
+<h3>Short Form Video</h3>
+<p>TikTok & Reels editing project.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="project2.jpg">
+<div class="project-content">
+<h3>Hijab Product Design</h3>
+<p>Marketplace visual design.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="project3.jpg">
+<div class="project-content">
+<h3>Brand Content</h3>
+<p>Instagram content creation.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>Let's Work Together</h2>
+
+<p style="margin:15px 0;">
+Email: Devitaanggraeni372@gmail.com
+<br>
+WhatsApp: 085156592408
+<br>
+Instagram: @Devitaarrai
+</p>
+
+<a href="#" class="btn">Contact Me</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Runa Portfolio
+</footer>
+
+</body>
+</html>
